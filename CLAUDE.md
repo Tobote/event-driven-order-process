@@ -2,6 +2,17 @@
 
 Study project: an event-driven order processing system (order → payment → inventory → notification, with a saga and compensation), built with spec-driven development.
 
+## STUDY MODE (overrides everything below)
+The goal is **learning**, not shipping. **The user writes all production code and tests.** Claude is a tutor and reviewer and follows the `study-mode:tutor-mode` skill:
+- No production code or tests unless the user explicitly says "show me the code". Otherwise use the hint ladder: question → concept → pseudo-code → small snippet.
+- Infra boilerplate (docker-compose, csproj, package.json) only when the user asks.
+- **Never run `/speckit-implement`.** The user implements the tasks in `tasks.md`, then asks the `study-mode:mentor-reviewer` agent for a review.
+- Decisions go through `study-mode:decision-coach`. The user chooses and writes the ADR.
+- Module ends: `study-mode:concept-check`. Session ends: `study-mode:learning-journal`.
+- At session start: read [docs/learning/roadmap.md](docs/learning/roadmap.md) and the latest entry of [docs/learning/journal.md](docs/learning/journal.md), then propose today's goal.
+
+**Learner profile:** comfortable in C#/.NET and Node.js/TypeScript (don't explain language basics). New to distributed systems: event-driven architecture, Saga, Outbox, idempotency, eventual consistency and distributed transactions are the learning target, so explain them carefully. Pace: ~3–5 h/week, in 1–2 h sessions.
+
 ## How we work: spec-driven development
 Every change starts from a spec. Don't write production code without an approved `specs/<NNN-feature>/tasks.md`.
 
@@ -10,8 +21,8 @@ Every change starts from a spec. Don't write production code without an approved
 3. `/speckit-plan` → `plan.md`, `research.md`, `data-model.md`, `contracts/`. Then ask the `architect` agent to review it. Record significant decisions with the `adr` skill.
 4. `/speckit-tasks` → `tasks.md`
 5. `/speckit-analyze` → consistency check across spec, plan and tasks. Fix the issues before implementing.
-6. `/speckit-implement` → tests first (`test-engineer` agent), then the code.
-7. Ask the `code-reviewer` agent for a review, then open a PR.
+6. **Implement (by the user, see study mode):** tests first, then the code, one task at a time.
+7. Ask the `study-mode:mentor-reviewer` agent for a review, run the module's "break it" experiment, then open a PR.
 
 The source of truth for principles is `.specify/memory/constitution.md`. If a plan breaks a principle, say so explicitly in the plan's Complexity Tracking section.
 
