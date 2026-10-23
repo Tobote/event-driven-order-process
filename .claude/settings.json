@@ -1,0 +1,36 @@
+{
+  "extraKnownMarketplaces": {
+    "ai-base": {
+      "source": {
+        "source": "directory",
+        "path": "C:\\Users\\celio.pimentel\\Desktop\\Estudos\\Pessoal\\claude-ai-base"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "sdd-core@ai-base": true,
+    "stack-dotnet@ai-base": true,
+    "stack-node@ai-base": true,
+    "event-driven@ai-base": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet test:*)",
+      "Bash(npm test:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run build:*)",
+      "Bash(docker compose ps:*)",
+      "Bash(docker compose logs:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/secrets/**)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Claude Code local-only settings
+.claude/settings.local.json
+
+# .NET
+bin/
+obj/
+*.user
+TestResults/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# IDE / OS
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
