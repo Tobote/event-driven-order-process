@@ -1,18 +1,4 @@
 {
-  "extraKnownMarketplaces": {
-    "ai-base": {
-      "source": {
-        "source": "github",
-        "repo": "Tobote/claude-ai-base"
-      }
-    }
-  },
-  "enabledPlugins": {
-    "sdd-core@ai-base": true,
-    "stack-dotnet@ai-base": true,
-    "stack-node@ai-base": true,
-    "event-driven@ai-base": true
-  },
   "permissions": {
     "allow": [
       "Bash(git status:*)",
@@ -32,5 +18,19 @@
       "Read(./.env.*)",
       "Read(./**/secrets/**)"
     ]
+  },
+  "enabledPlugins": {
+    "sdd-core@ai-base": true,
+    "stack-dotnet@ai-base": true,
+    "stack-node@ai-base": true,
+    "event-driven@ai-base": true
+  },
+  "extraKnownMarketplaces": {
+    "ai-base": {
+      "source": {
+        "source": "github",
+        "repo": "Tobote/claude-ai-base"
+      }
+    }
   }
 }
