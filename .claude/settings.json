@@ -23,7 +23,8 @@
     "sdd-core@ai-base": true,
     "stack-dotnet@ai-base": true,
     "stack-node@ai-base": true,
-    "event-driven@ai-base": true
+    "event-driven@ai-base": true,
+    "study-mode@ai-base": true
   },
   "extraKnownMarketplaces": {
     "ai-base": {
