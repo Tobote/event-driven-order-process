@@ -2,8 +2,8 @@
   "extraKnownMarketplaces": {
     "ai-base": {
       "source": {
-        "source": "directory",
-        "path": "C:\\Users\\celio.pimentel\\Desktop\\Estudos\\Pessoal\\claude-ai-base"
+        "source": "github",
+        "repo": "Tobote/claude-ai-base"
       }
     }
   },
