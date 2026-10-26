@@ -15,4 +15,7 @@ The problem, the forces at play and the constraints (cite constitution principle
 We choose **X** because ...
 
 ## Consequences
-What becomes easier, what becomes harder, follow-ups and risks.
+What becomes easier, what becomes harder.
+
+## Follow-ups
+Follow-ups and risks.
