@@ -36,7 +36,7 @@ The source of truth for principles is `.specify/memory/constitution.md`. If a pl
 ## Commands
 | Purpose | Command |
 |---|---|
-| Start local env | `docker compose up -d` |
+| Start local env | `docker compose -f infra/docker-compose.yaml up -d` |
 | Build | TBD (defined in the first plan.md) |
 | Test | TBD |
 | Lint/format | TBD |

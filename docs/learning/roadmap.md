@@ -38,7 +38,7 @@ For every module: **Learn → Decide → Specify → Build → Break → Review 
 - **Build:** install the .NET SDK and Docker Desktop. Write `docker-compose.yml` with Postgres, RabbitMQ and Redis, plus health checks.
 - **Break:** stop a container and watch `docker compose ps` and the health checks react.
 - **Done when:** `docker compose up -d` is all healthy, constitution v1.0 is ratified, and ADR 0001 is accepted.
-- [ ] Constitution ratified · [ ] ADR 0001 · [ ] compose healthy · [ ] concept check ≥ 80% · [ ] journal
+- [x] Constitution ratified · [x] ADR 0001 · [ ] compose healthy · [ ] concept check ≥ 80% · [ ] journal
 
 ### ☐ Module 1: Place order, the naive way (weeks 3–4)
 - **Learn:** service boundaries, one database per service, the **dual-write problem**.
