@@ -31,14 +31,14 @@ For every module: **Learn → Decide → Specify → Build → Break → Review 
 
 ## Modules
 
-### ☐ Module 0: Foundations & environment (weeks 1–2)
+### ☑ Module 0: Foundations & environment (weeks 1–2)
 - **Learn:** sync vs async communication, commands vs events, temporal and spatial coupling, CAP intuition, what "eventual consistency" really means.
 - **Read:** *Microservices Patterns* ch. 3 (messaging); RabbitMQ tutorials 1–3.
 - **Decide:** ratify the constitution (`/speckit-constitution`), then ADR **0001 broker: RabbitMQ vs Kafka**.
 - **Build:** install the .NET SDK and Docker Desktop. Write `docker-compose.yml` with Postgres, RabbitMQ and Redis, plus health checks.
 - **Break:** stop a container and watch `docker compose ps` and the health checks react.
 - **Done when:** `docker compose up -d` is all healthy, constitution v1.0 is ratified, and ADR 0001 is accepted.
-- [x] Constitution ratified · [x] ADR 0001 · [ ] compose healthy · [ ] concept check ≥ 80% · [ ] journal
+- [x] Constitution ratified · [x] ADR 0001 · [x] compose healthy · [x] concept check ≥ 80% (91%) · [x] journal
 
 ### ☐ Module 1: Place order, the naive way (weeks 3–4)
 - **Learn:** service boundaries, one database per service, the **dual-write problem**.
